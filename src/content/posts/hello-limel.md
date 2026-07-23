@@ -3,12 +3,10 @@ title: Hello
 published: 2026-07-24
 description: 起点.
 image: "./cover.jpeg"
-tags:
-  - Blog
-  - Life
+tags: ["Fuwari", "Blogging", "Customization"]
+ 
    
-category: Guides
-draft: false
+
 ---
 
 # 你好.
