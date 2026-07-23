@@ -1,4 +1,4 @@
-name: Deploy Astro site to Pages with pnpm
+name: Deploy Astro site to Pages
 
 on:
   push:
@@ -21,17 +21,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        
-          
-          
-      - name: Setup Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm"
           
+      - name: Enable Corepack (for pnpm)
+        run: corepack enable
+        
       - name: Install dependencies
         run: pnpm install
         
@@ -52,4 +49,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
