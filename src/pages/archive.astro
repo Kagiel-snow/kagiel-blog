@@ -1,16 +1,18 @@
 ---
-import ArchivePanel from '@components/ArchivePanel.svelte'
-import MainGridLayout from '@layouts/MainGridLayout.astro'
-import { getCategoryList, getTagList } from '@utils/content-utils'
-import { i18n } from '@i18n/translation'
-import I18nKey from '@i18n/i18nKey'
+import ArchivePanel from "@components/ArchivePanel.svelte";
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getCategoryList, getTagList } from "@utils/content-utils";
 
-const rawTags = await getTagList()
-const rawCategories = await getCategoryList()
+const rawTags = await getTagList();
+const rawCategories = await getCategoryList();
 
 // 提取出纯字符串数组
-const tags = rawTags.map(tag => typeof tag === 'string' ? tag : tag.name)
-const categories = rawCategories.map(category => typeof category === 'string' ? category : category.name)
+const tags = rawTags.map((tag) => (typeof tag === "string" ? tag : tag.name));
+const categories = rawCategories.map((category) =>
+	typeof category === "string" ? category : category.name,
+);
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)}>
