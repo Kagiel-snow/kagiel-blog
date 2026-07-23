@@ -16,6 +16,6 @@ const postsForArchive = sortedPostsList.map(post => ({
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)}>
-    <ArchivePanel tags={tags} categories={categories} sortedPosts={postsForArchive} client:only="svelte"></ArchivePanel>
+    <ArchivePanel tags={[]} categories={[]} sortedPosts={postsForArchive} client:only="svelte"></ArchivePanel>
 </MainGridLayout>
 
