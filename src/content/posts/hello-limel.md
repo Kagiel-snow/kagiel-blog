@@ -1,24 +1,31 @@
 ---
 title: Hello
 published: 2026-07-24
-description: The first post on my personal website.
+description: 起点.
+image: "./cover.jpeg"
 tags:
   - Blog
   - Life
+   
+category: Guides
+draft: false
 ---
 
-# Hello.
+# 你好.
 
-Welcome to my website.
+欢迎来到我的个人博客.
 
-My name is **Kagiel**.
+**Kagiel**.
 
 Like snow.
 
-This is where I will document my journey in:
+我可能会在以后在这里发表一些无聊的东西:
 
-- Web Development
-- Cyber Security
-- Open Source
+- 网络安全
+- 程序开发
+- 游戏
+- 音乐
+- 小说
+- 还有一些碎碎念
 
-Every project starts with a single page.
+无聊的话可以来看看我呀，看到我的人都会变得幸福的.
